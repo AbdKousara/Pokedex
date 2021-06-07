@@ -1,0 +1,108 @@
+body {
+       background-image: url(media/container_bg.png);
+       overflow-x: hidden;
+       width: 100vw;
+       font-family: 'Public Sans', sans-serif;
+
+}
+
+#logo_section {
+       text-align: center;
+       margin-bottom: 30px;
+}
+
+.pokemon_logo {
+       width: 600px;
+       animation: moveInLeft 1s ease-out;
+}
+
+.pokeball {
+       width: 70px;
+       display: block;
+       margin: -100px auto 0 auto;
+       animation: moveInBottom .5s ease-out .75s;
+       animation-fill-mode: backwards;
+}
+
+#cards_section {
+       display: flex;
+       justify-content: center;
+}
+
+.poke_cards {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 10px;
+       width: 840px;
+}
+
+.card {
+       background: #ffff;
+       border-radius: 10px;
+       overflow: hidden;
+       transition: all opacity 0.3s ease-in-out;
+}
+
+.card_head {
+       border-radius: 10px;
+       background: #ebebeb;
+       width: 200px;
+       height: 200px;
+       padding: 0px;
+}
+
+
+.card_body {
+       padding: 10px;
+}
+
+.card:hover {
+       margin-top: -5px;
+       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+span {
+       color: #919191;
+       font-size: 80%;
+}
+
+.pill {
+       border-radius: 3px;
+       line-height: 18px;
+       max-width: 110px;
+       margin: 0 64px 0 0;
+       width: 38%;
+       text-transform: none;
+       font-size: 11px;
+       text-align: center;
+       background-color: #fd7d24;
+       color: #ffff;
+}
+
+@keyframes moveInLeft {
+       0% {
+              opacity: 0;
+              transform: translateX(-100px);
+       }
+
+       80% {
+              transform: translateX(10px);
+       }
+
+       100% {
+              opacity: 1;
+              transform: translate(0);
+       }
+}
+
+@keyframes moveInBottom {
+       0% {
+              opacity: 0;
+              transform: translateY(3rem);
+       }
+
+       100% {
+              opacity: 1;
+              transform: translate(0);
+       }
+}
