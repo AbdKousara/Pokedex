@@ -19,7 +19,7 @@ function createPokemonCard(pokemon){
          src="media/0${pokemon.id}.png" alt="pokemon img"></div>
          <div class="card_body">
             <span>#00${pokemon.id}</span>
-            <h4>${pokemon.name}</h4>
+            <h4>${pokemon.name[0].toUpperCase()+pokemon.name.slice(1)}</h4>
             ${pokemon.types.length == 2 ?
              `<p class="pill">${pokemon.types[0].type.name}</p> 
               <p class="pill">${pokemon.types[1].type.name}</p>` 
