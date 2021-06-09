@@ -3,6 +3,7 @@ body {
        overflow-x: hidden;
        width: 100vw;
        font-family: 'Public Sans', sans-serif;
+       box-sizing: border-box;
 
 }
 
@@ -61,23 +62,28 @@ body {
        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+.pill { 
+       display: inline; 
+       border-radius: 3px;
+       width: 30px;
+       height: 30px;
+       padding: 5px;
+       font-size: 15px;
+       background-color: #4592c4;
+       color: #ffff;
+       
+}
+
 span {
        color: #919191;
        font-size: 80%;
 }
 
-.pill {
-       border-radius: 3px;
-       line-height: 18px;
-       max-width: 110px;
-       margin: 0 64px 0 0;
-       width: 38%;
-       text-transform: none;
-       font-size: 11px;
-       text-align: center;
-       background-color: #fd7d24;
-       color: #ffff;
+h4{
+       margin-bottom: 5px;
 }
+
+
 
 @keyframes moveInLeft {
        0% {
@@ -98,7 +104,7 @@ span {
 @keyframes moveInBottom {
        0% {
               opacity: 0;
-              transform: translateY(3rem);
+              transform: translateY(30px);
        }
 
        100% {

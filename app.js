@@ -35,7 +35,7 @@ let data = [
     thumbnail: 'media/006.png',
     id: 6,
     name: 'Charizard',
-    type: ['Fire ','Flying']
+    type: ['Fire','Flying']
   },
   {
     thumbnail: 'media/007.png',
@@ -66,10 +66,8 @@ for(i = 0; i < data.length ; i++){
        <div class="card_body">
           <span>${data[i].id}</span>
           <h4>${data[i].name}</h4>
-          <div>
-           <p class="pill">${data[i].type} </p>
-          </div>
-          
+          ${data[i].type.length == 2 ? `<p class="pill">${data[i].type[0]}</p> <p class="pill">${data[i].type[1]}</p>` 
+          : `<p class="pill">${data[i].type[0]}</p>`}
        </div>`;
   document.querySelector('.poke_cards').appendChild(cardElement);
 }
