@@ -84,19 +84,18 @@ h4{
 }
 
 @media (max-width: 600px)  {
-       .pokemon_logo {
-              width: 320px;
-            
+       #logo_section{
+              width: 100px;
        }
 
        .pokeball {
               width: 40px;
-              margin-top: -45px;
+              margin-top: -50px;
               
        }
 
        .poke_cards {
-              width: 220px;
+              width: 240px;
        }
 }
 
