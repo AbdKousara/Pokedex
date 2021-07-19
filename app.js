@@ -16,7 +16,7 @@ function createPokemonCard(pokemon){
     let cardElement = document.createElement('div');
     cardElement.classList.add('card');
     cardElement.innerHTML=`<div class="card_head"><img id="poke_img" 
-         src="media/0${pokemon.id}.png" alt="pokemon img"></div>
+         src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png" alt="pokemon img"></div>
          <div class="card_body">
             <span>#00${pokemon.id}</span>
             <h4>${pokemon.name[0].toUpperCase()+pokemon.name.slice(1)}</h4>

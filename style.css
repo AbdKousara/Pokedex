@@ -30,6 +30,11 @@ body {
        justify-content: center;
 }
 
+#poke_img{
+       width: 200px;
+       height: 200px;
+}
+
 .poke_cards {
        display: flex;
        flex-wrap: wrap;
